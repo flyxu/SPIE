@@ -88,7 +88,6 @@ def loss(logits, labels):
 
 def training(loss, learning_rate):
     """Sets up the training Ops.
-  Creates a summarizer to track the loss over time in TensorBoard.
   Creates an optimizer and applies the gradients to all trainable variables.
   The Op returned by this function is what must be passed to the
   `sess.run()` call to cause the model to train.
